@@ -1,9 +1,9 @@
 import { formatPrice } from "../utils/index.jsx";
 import { useState } from "react";
-const Range = ({ label, name, size }) => {
+const Range = ({ label, name, size, price }) => {
   const step = 1000;
   const maxPrice = 100000;
-  const [selectedPrice, setSelectedPrice] = useState(maxPrice);
+  const [selectedPrice, setSelectedPrice] = useState(price || maxPrice);
 
   return (
     <div className="form-control">
