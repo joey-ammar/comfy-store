@@ -8,7 +8,7 @@ export const loader = async ({ request }) => {
   const params = Object.fromEntries([
     ...new URL(request.url).searchParams.entries(),
   ]);
-  console.log(params);
+
   const response = await customFetch(url, {
     params: params,
   });
@@ -21,8 +21,8 @@ const Products = () => {
   return (
     <>
       <Filters />
-      <PaginationContainer />
       <ProductsContainer />
+      <PaginationContainer />
     </>
   );
 };

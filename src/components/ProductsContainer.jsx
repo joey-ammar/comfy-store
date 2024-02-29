@@ -14,8 +14,7 @@ const ProductsContainer = () => {
         : "btn-ghost text-based-content"
     }`;
   };
-  console.log(totalProducts);
-  console.log(meta);
+
   return (
     <>
       {/**Header */}
