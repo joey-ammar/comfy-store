@@ -1,8 +1,8 @@
-const Select = ({ label, name, list, defaultValue, size }) => {
+const FormSelect = ({ label, name, list, defaultValue, size }) => {
   return (
-    <div className="form-control">
-      <label htmlFor={name} className="label">
-        <span className="label-text capitalize">{label}</span>
+    <div className='form-control'>
+      <label htmlFor={name} className='label'>
+        <span className='label-text capitalize'>{label}</span>
       </label>
       <select
         name={name}
@@ -21,4 +21,4 @@ const Select = ({ label, name, list, defaultValue, size }) => {
     </div>
   );
 };
-export default Select;
+export default FormSelect;
